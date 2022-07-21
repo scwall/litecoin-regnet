@@ -1,0 +1,17 @@
+version: '3'
+volumes:
+  local_postgres_data: {}
+services:
+  litecoin-regnet:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./litecoin-regnet:/data
+    ports:
+      - 19332:19332
+      - 19334:19334
+      - 19000:19000
+
+
+

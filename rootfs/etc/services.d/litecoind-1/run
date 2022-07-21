@@ -3,6 +3,7 @@
 echo "* Litecoind node 1..."
 exec /usr/bin/litecoind \
     --printtoconsole \
+    -deprecatedrpc=generate \
     -datadir=/data/node-1 \
     -conf=/etc/conf/node-1/litecoin.conf \
     -server \
